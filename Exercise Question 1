@@ -1,0 +1,10 @@
+listOne = [3, 6, 9, 12, 15, 18, 21]
+listTwo = [4, 8, 12, 16, 20, 24, 28]
+
+listOne = listOne[1::2]
+print(listOne)
+listTwo = listTwo[0::2]
+print(listTwo)
+
+listThree = listOne + listTwo
+print(listThree)
