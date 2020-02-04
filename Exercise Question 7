@@ -1,0 +1,5 @@
+"""Given two sets, Checks if One Set is Subset or superset of Another Set. if the subset is found 
+delete all elements from that set. """
+
+First_Set = {57, 83, 29}
+Second_Set = {67, 73, 43, 48, 83, 57, 29}
