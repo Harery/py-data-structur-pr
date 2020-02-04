@@ -4,8 +4,8 @@ st = 'Print only the words that start with s in this sentence'
 st = st.split()
 
 for i in st:
-    if i[0] == 's':
-    # if i.startwith('s'):
+     if i[0] == 's':
+     #if i.startswith('s'):
         if len(i) <= 1:
             print("  '{}' ".format(i) , "this is not word because it less than one character {}".format(len(i)))
         else:
