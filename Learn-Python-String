@@ -1,10 +1,12 @@
+names = ['Ahmed', 'Gihad', 'Jad', 'Mohamed', 6,'Yahia', 'ali ya ali', 'azzma', 'd', 'e', 'lola', 'm', 'm', 'o']
+
 """
-طباعة عدد العناصر  من الليست
+طباعة عدد عناصر الليست
 """
 print(len(names))
 
 """
-طباعة عدد الوحدات داخل العنصر الواحد من الليست
+طباعة عدد الوحدات داخل العنصر الواحد الليست
 """
 print(len(names[6]))
 
@@ -33,3 +35,32 @@ print(names3)
 
 names = names[::-1]
 print(names)
+
+"""
+تحويل اي نص الي ليست
+"""
+s1 = 'Allah'
+s2 = 'hello world'
+
+x1 = s1.split()
+x11 = list(s1)
+print(x1 , x11)
+
+z1 = s2.split()
+z11 = list(s2)
+print(z1 , z11)
+
+"""
+استبدال عنصر بعنصر أخر
+"""
+y1 = 'mohamed ahmed waza'
+print(y1)
+y2 = y1.replace('waza' , 'wafa')
+print(y2)
+
+"""
+أضافة سطر جديد لامر الطباعه
+"""
+print('my name is mohamed')
+print('i 39 old')
+print("my name is mohamed. \ni'm 39 old")
