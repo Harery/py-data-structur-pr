@@ -1,0 +1,35 @@
+"""
+طباعة عدد العناصر  من الليست
+"""
+print(len(names))
+
+"""
+طباعة عدد الوحدات داخل العنصر الواحد من الليست
+"""
+print(len(names[6]))
+
+"""
+تقطيع او اختيار عناصر محدده في ليت جديده او نفس الليست بالابقاء علي اسمها
+"""
+names1 = names[0:2]
+print(names1)
+
+names2 = names[0]
+names2 = names2[0:3]
+print(names2)
+
+"""
+طباعة الليست من الأخر لللأول
+"""
+names.reverse()
+print(names)
+
+"""
+طباعة العنصر من الاخر لللأول , و يمكن ايضا استخدامها في الليست
+"""
+names3 = names[3]
+names3 = names3[::-1]
+print(names3)
+
+names = names[::-1]
+print(names)
