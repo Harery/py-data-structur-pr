@@ -34,7 +34,7 @@ dev = [
     "pytest-xdist>=3.5.0",
     "hypothesis>=6.98.0",
     "ruff>=0.3.0",
-    "pyright>=1.1.350",
+    "pyright>=1.1.408",
     "bandit>=1.7.8",
     "pre-commit>=3.6.0",
 ]
@@ -255,7 +255,7 @@ dev = [
     "pytest-xdist>=3.5.0",
     "hypothesis>=6.98.0",
     "ruff>=0.3.0",
-    "pyright>=1.1.350",
+    "pyright>=1.1.408",
     "bandit>=1.7.8",
     "pre-commit>=3.6.0",
 ]
