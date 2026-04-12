@@ -35,7 +35,7 @@ dev = [
     "hypothesis>=6.98.0",
     "ruff>=0.3.0",
     "pyright>=1.1.350",
-    "bandit>=1.7.8",
+    "bandit>=1.9.4",
     "pre-commit>=3.6.0",
 ]
 docs = [
@@ -256,7 +256,7 @@ dev = [
     "hypothesis>=6.98.0",
     "ruff>=0.3.0",
     "pyright>=1.1.350",
-    "bandit>=1.7.8",
+    "bandit>=1.9.4",
     "pre-commit>=3.6.0",
 ]
 docs = [
