@@ -48,7 +48,7 @@ notebooks = [
     "jupyter>=1.0.0",
     "marimo>=0.3.0",
     "matplotlib>=3.8.0",
-    "numpy>=1.26.0",
+    "numpy>=2.4.4",
 ]
 visualizations = [
     "manim>=0.18.0",
