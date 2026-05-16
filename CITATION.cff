@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "OCTALUM-PYLAB: Master Python Data Structures & Algorithms Through Guided Experimentation"
+message: "If you use this project in teaching or research, please cite it as below."
+type: software
+authors:
+  - family-names: Harery
+    given-names: Mohamed
+    email: mohamed@harery.com
+    website: "https://harery.com"
+repository-code: "https://github.com/Harery/OCTALUM-PYLAB"
+url: "https://harery.github.io/OCTALUM-PYLAB/"
+abstract: >
+  OCTALUM-PYLAB is an 8-phase Python curriculum for mastering data structures,
+  algorithms, and coding-interview patterns through hands-on, tested, and
+  Big-O-annotated lab exercises. It covers foundations, classical and advanced
+  data structures, 11 interview patterns, dynamic programming, graph
+  algorithms, and LeetCode-style challenges, with a MkDocs Material
+  documentation site and runnable Jupyter notebooks.
+keywords:
+  - python
+  - data-structures
+  - algorithms
+  - dsa
+  - leetcode
+  - coding-interview
+  - interview-preparation
+  - faang
+  - education
+  - computer-science
+license: GPL-3.0-or-later
+version: "1.0.0"
+date-released: 2026-05-16
