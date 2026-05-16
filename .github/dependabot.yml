@@ -8,6 +8,28 @@ updates:
     labels:
       - "dependencies"
       - "python"
+    groups:
+      dev-deps:
+        applies-to: version-updates
+        dependency-type: "development"
+        patterns:
+          - "ruff"
+          - "pyright"
+          - "bandit"
+          - "pre-commit"
+          - "pytest*"
+          - "coverage*"
+          - "mkdocs*"
+      science-deps:
+        applies-to: version-updates
+        patterns:
+          - "numpy"
+          - "scipy"
+          - "matplotlib"
+          - "pandas"
+          - "jupyter*"
+          - "notebook*"
+          - "ipython*"
 
   - package-ecosystem: "github-actions"
     directory: "/.github/workflows"
@@ -17,3 +39,7 @@ updates:
     labels:
       - "dependencies"
       - "github-actions"
+    groups:
+      actions:
+        patterns:
+          - "*"
