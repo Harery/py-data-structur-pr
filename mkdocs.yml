@@ -1,14 +1,14 @@
 site_name: OCTALUM-PYLAB
-site_url: https://harery.com/octalum-pylab
-site_author: OCTALUME
-site_description: Master Python Data Structures & Algorithms Through Guided Experimentation
+site_url: https://harery.github.io/OCTALUM-PYLAB/
+site_author: Mohamed Harery
+site_description: Master Python Data Structures & Algorithms Through Guided Experimentation - 8 phases of hands-on labs, patterns, and interview prep.
 
 docs_dir: record/docs
 site_dir: site
 
 repo_name: Harery/OCTALUM-PYLAB
 repo_url: https://github.com/Harery/OCTALUM-PYLAB
-edit_uri: edit/main/record/docs/
+edit_uri: edit/master/record/docs/
 
 copyright: Copyright &copy; 2026 OCTALUME
 

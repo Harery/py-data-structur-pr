@@ -1,26 +1,32 @@
 [project]
 name = "octalum-pylab"
 version = "1.0.0"
-description = "Master Python Data Structures & Algorithms Through Guided Experimentation"
+description = "Master Python Data Structures & Algorithms Through Guided Experimentation - 8 phases of hands-on labs, patterns, and interview prep."
 readme = "README.md"
-license = "MIT"
+license = "GPL-3.0-or-later"
 requires-python = ">=3.12"
-authors = [{ name = "OCTALUME", email = "octalume@harery.com" }]
+authors = [{ name = "Mohamed Harery", email = "mohamed@harery.com" }]
 keywords = [
     "python",
     "data-structures",
     "algorithms",
-    "learning",
-    "interview-prep",
+    "dsa",
     "leetcode",
+    "coding-interview",
+    "interview-preparation",
+    "faang",
+    "algorithm-visualizations",
+    "competitive-programming",
+    "python-tutorial",
+    "learning",
+    "coding-patterns",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Education",
     "Topic :: Software Development :: Libraries :: Python Modules",
