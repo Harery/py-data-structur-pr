@@ -25,7 +25,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
-    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.12",
     "Topic :: Education",
@@ -72,6 +71,12 @@ Homepage = "https://github.com/Harery/OCTALUM-PYLAB"
 Documentation = "https://harery.com/octalum-pylab"
 Repository = "https://github.com/Harery/OCTALUM-PYLAB"
 Issues = "https://github.com/Harery/OCTALUM-PYLAB/issues"
+
+# OCTALUM-PYLAB is a curriculum repo, not a distributable library — declare no
+# packages so editable installs work without setuptools auto-discovery picking
+# up `build/`, `learn/`, etc.
+[tool.setuptools]
+py-modules = []
 
 # =============================================================================
 # RUFF CONFIGURATION (Replaces: flake8, black, isort, pydocstyle, pyupgrade)
