@@ -1,14 +1,19 @@
+<!--
+KEYWORDS: python data structures and algorithms, coding interview prep python, leetcode python solutions, cracking the coding interview python, FAANG interview prep, algorithm patterns python, DSA tutorial, python algorithms course, competitive programming python, interview cheat sheet python, big-o cheat sheet, sliding window python, two pointers python, dynamic programming python, system design primer python
+TLDR: Open-source 8-phase Python DSA curriculum and coding-interview prep lab. 11 interview patterns, Big-O annotated code, pytest suite, MkDocs docs, one-click Codespaces. Free and MIT-friendly under GPLv3.
+-->
+
 <p align="center">
   <a href="https://github.com/Harery/OCTALUM-PYLAB">
-    <img src="https://img.shields.io/badge/OCTALUM--PYLAB-8%20Phases%20of%20Mastery-blue?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e" alt="OCTALUM-PYLAB">
+    <img src="https://img.shields.io/badge/OCTALUM--PYLAB-8%20Phases%20of%20Mastery-blue?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e" alt="OCTALUM-PYLAB — Python data structures and algorithms course">
   </a>
 </p>
 
-<h1 align="center">OCTALUM&nbsp;PYLAB</h1>
+<h1 align="center">OCTALUM&nbsp;PYLAB — Python Data Structures &amp; Algorithms + Coding Interview Prep</h1>
 
 <p align="center">
-  <strong>Master Python Data Structures &amp; Algorithms through guided experimentation.</strong><br/>
-  An 8-phase lab — from Python basics to FAANG-level interview patterns — with runnable code, tests, visualizations, and a Big-O cheat sheet baked in.
+  <strong>Master Python data structures and algorithms (DSA) and crack the FAANG coding interview through guided experimentation.</strong><br/>
+  An open-source 8-phase Python algorithms course covering 11 interview patterns, LeetCode-style solutions, Big-O analysis, and a runnable pytest suite — everything you need for coding-interview prep, competitive programming, and learning DSA from scratch.
 </p>
 
 <p align="center">
@@ -29,20 +34,22 @@
   <a href="#-pattern-index">Pattern Index</a> •
   <a href="#-big-o-cheat-sheet">Big-O</a> •
   <a href="#-docs">Docs</a> •
+  <a href="#-faq--is-this-python-dsa-course-right-for-me">FAQ</a> •
   <a href="#-contributing">Contributing</a>
 </p>
 
 ---
 
-## Why OCTALUM-PYLAB?
+## Why OCTALUM-PYLAB? — A Python DSA Tutorial That You Can Actually Run
 
-Most DSA repos give you either (a) thousands of unstructured LeetCode dumps, or (b) pretty animations with no code you can run. This one is different:
+Most Python data structures and algorithms repos give you either (a) thousands of unstructured LeetCode python solutions, or (b) pretty animations with no code you can run. This one is different — it's a complete **python algorithms course** built for **coding interview prep**:
 
 - **Learn by experimenting** — every algorithm is a small, importable Python module you can run, edit, and test.
 - **Pattern-first** — 11 interview patterns (Sliding Window, Two Pointers, Top-K, Two Heaps, …) each with their own folder and explanation.
 - **Big-O everywhere** — time and space complexity annotated at the top of every implementation.
 - **Tested** — `pytest` suite covers foundations, data structures, and algorithms. CI runs on every push.
 - **A complete curriculum**, not a snippet dump — 8 phases that take you from `for` loops to FAANG-style mock interviews.
+- **Inspired by** *Cracking the Coding Interview*, *Grokking the Coding Interview*, and *Elements of Programming Interviews* — distilled into runnable Python 3.12 code.
 
 ---
 
@@ -215,6 +222,28 @@ Easy ways to help:
 - Write a Jupyter notebook visualization for `learn/notebooks/`
 - Improve a cheatsheet in `learn/cheatsheets/`
 - File an issue when complexity annotations are wrong or missing
+
+---
+
+## ❓ FAQ — Is This Python DSA Course Right for Me?
+
+### How do I start learning Python data structures and algorithms with this repo?
+Clone the repo, run `uv sync --all-extras` (or `pip install -e ".[dev,notebooks]"`), then open [`build/foundations/`](build/foundations/) if you're new to Python or [`build/data-structures/`](build/data-structures/) if you already know Python. Each module is runnable and self-contained — `python build/data-structures/01-arrays-lists/array.py` will execute it.
+
+### What's the time commitment for full FAANG interview prep?
+Plan on **8–12 weeks part-time** (10 hrs/week) to go through all 8 phases. If you're cramming for a coding interview in 2–4 weeks, jump straight to [`build/patterns/`](build/patterns/) and [`learn/cheatsheets/`](learn/cheatsheets/) — that's the fastest path through the 11 patterns that cover roughly 80% of LeetCode mediums.
+
+### Which interview patterns matter most for FAANG (Google, Meta, Amazon, Apple, Netflix)?
+From data on real FAANG interview loops, the top patterns are: **Sliding Window, Two Pointers, BFS/DFS on trees, Top-K (heap), Modified Binary Search, Dynamic Programming, and Graph traversal**. All eleven are in [`build/patterns/`](build/patterns/) with classic LeetCode problems mapped to each.
+
+### Is this a replacement for *Cracking the Coding Interview* or LeetCode Premium?
+It complements them. Read CtCI for theory and behavioral prep, grind LeetCode for raw volume, and use OCTALUM-PYLAB as the **runnable companion** — every algorithm has Big-O annotations, pytest coverage, and a "when to reach for this pattern" note.
+
+### Does this work for competitive programming (Codeforces, ICPC)?
+Yes — the [`build/algorithms/`](build/algorithms/) phase covers DP, graph algorithms (Dijkstra, Bellman-Ford, Kruskal, Floyd–Warshall), string algorithms (KMP, Rabin-Karp, Z-function), and number theory — all the staples for Codeforces Div 2 and ICPC regionals.
+
+### Is it free? Can I use it for my classroom or bootcamp?
+Yes — licensed **GPL-3.0-or-later** for the code; please cite via [`CITATION.cff`](CITATION.cff) if you use it in research or teaching. Educators: there's a syllabus draft in [`record/docs/`](record/docs/) and notebooks in [`learn/notebooks/`](learn/notebooks/).
 
 ---
 
