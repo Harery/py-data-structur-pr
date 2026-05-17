@@ -1,268 +1,231 @@
-<!--
-KEYWORDS: python data structures and algorithms, coding interview prep python, leetcode python solutions, cracking the coding interview python, FAANG interview prep, algorithm patterns python, DSA tutorial, python algorithms course, competitive programming python, interview cheat sheet python, big-o cheat sheet, sliding window python, two pointers python, dynamic programming python, system design primer python
-TLDR: Open-source 8-phase Python DSA curriculum and coding-interview prep lab. 11 interview patterns, Big-O annotated code, pytest suite, MkDocs docs, one-click Codespaces. Free and MIT-friendly under GPLv3.
--->
+<!-- KEYWORDS: python data structures and algorithms, coding interview prep python, leetcode python solutions, FAANG interview prep, algorithm patterns python, DSA tutorial, python algorithms course, big-o cheat sheet, sliding window python, two pointers python, dynamic programming python, grokking the coding interview, cracking the coding interview python, elements of programming interviews, neetcode alternative, pytest dsa, mkdocs python course, gpl python curriculum -->
 
-<p align="center">
-  <a href="https://github.com/Harery/OCTALUM-PYLAB">
-    <img src="https://img.shields.io/badge/OCTALUM--PYLAB-8%20Phases%20of%20Mastery-blue?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a2e" alt="OCTALUM-PYLAB — Python data structures and algorithms course">
-  </a>
-</p>
+<div align="center">
 
-<h1 align="center">OCTALUM&nbsp;PYLAB — Python Data Structures &amp; Algorithms + Coding Interview Prep</h1>
+# OCTALUM-PYLAB
 
-<p align="center">
-  <strong>Master Python data structures and algorithms (DSA) and crack the FAANG coding interview through guided experimentation.</strong><br/>
-  An open-source 8-phase Python algorithms course covering 11 interview patterns, LeetCode-style solutions, Big-O analysis, and a runnable pytest suite — everything you need for coding-interview prep, competitive programming, and learning DSA from scratch.
-</p>
+**Master Python data structures and algorithms by running code you wrote — not memorizing code you read.**
 
-<p align="center">
-  <a href="https://www.python.org/downloads/release/python-3120/"><img src="https://img.shields.io/badge/Python-3.12%2B-blue?logo=python&logoColor=white" alt="Python 3.12+"></a>
-  <a href="https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml"><img src="https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml/badge.svg?branch=master" alt="CI"></a>
-  <a href="https://docs.astral.sh/ruff/"><img src="https://img.shields.io/badge/lint-ruff-orange?logo=python&logoColor=white" alt="Ruff"></a>
-  <a href="https://docs.pytest.org/"><img src="https://img.shields.io/badge/tests-pytest-0A9EDC?logo=pytest&logoColor=white" alt="Pytest"></a>
-  <a href="https://harery.github.io/OCTALUM-PYLAB/"><img src="https://img.shields.io/badge/docs-mkdocs--material-526CFE?logo=materialformkdocs&logoColor=white" alt="Docs"></a>
-  <a href="https://github.com/Harery/OCTALUM-PYLAB/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-GPL%20v3-blue" alt="License">
-  </a>
-  <a href="https://github.com/Harery/OCTALUM-PYLAB/stargazers"><img src="https://img.shields.io/github/stars/Harery/OCTALUM-PYLAB?style=flat&logo=github&label=stars" alt="Stars"></a>
-</p>
+[![CI](https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml)
+[![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](LICENSE)
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3120/)
+[![Tests 48/48](https://img.shields.io/badge/tests-48%2F48-brightgreen?logo=pytest&logoColor=white)](https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml)
+[![GitHub stars](https://img.shields.io/github/stars/Harery/OCTALUM-PYLAB?style=flat&logo=github&label=stars)](https://github.com/Harery/OCTALUM-PYLAB/stargazers)
 
-<p align="center">
-  <a href="#-pick-your-path">Pick Your Path</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-the-8-phases">8 Phases</a> •
-  <a href="#-pattern-index">Pattern Index</a> •
-  <a href="#-big-o-cheat-sheet">Big-O</a> •
-  <a href="#-docs">Docs</a> •
-  <a href="#-faq--is-this-python-dsa-course-right-for-me">FAQ</a> •
-  <a href="#-contributing">Contributing</a>
-</p>
+</div>
+
+> An 8-phase Python DSA curriculum and coding-interview lab. Eleven interview patterns, Big-O-annotated code, a 48-test pytest suite, MkDocs site, one-click Codespaces. You run every algorithm; you don't just read it.
+
+<p align="right"><sub><code>DRAWING NO. 02.00  ·  REV. 2026.05  ·  SHEET 02 OF 05</code></sub></p>
+
+[The problem](#the-problem) | [Install](#install) | [Quickstart](#quickstart) | [What you get](#what-you-get) | [How it works](#how-it-works) | [Pattern index](#pattern-index) | [If you also use…](#if-you-also-use) | [FAQ](#faq) | [Documentation](#documentation) | [Roadmap](#roadmap) | [Contributing · License · Security](#contributing--license--security)
 
 ---
 
-## Why OCTALUM-PYLAB? — A Python DSA Tutorial That You Can Actually Run
+## The problem
 
-Most Python data structures and algorithms repos give you either (a) thousands of unstructured LeetCode python solutions, or (b) pretty animations with no code you can run. This one is different — it's a complete **python algorithms course** built for **coding interview prep**:
-
-- **Learn by experimenting** — every algorithm is a small, importable Python module you can run, edit, and test.
-- **Pattern-first** — 11 interview patterns (Sliding Window, Two Pointers, Top-K, Two Heaps, …) each with their own folder and explanation.
-- **Big-O everywhere** — time and space complexity annotated at the top of every implementation.
-- **Tested** — `pytest` suite covers foundations, data structures, and algorithms. CI runs on every push.
-- **A complete curriculum**, not a snippet dump — 8 phases that take you from `for` loops to FAANG-style mock interviews.
-- **Inspired by** *Cracking the Coding Interview*, *Grokking the Coding Interview*, and *Elements of Programming Interviews* — distilled into runnable Python 3.12 code.
+Most Python DSA repos give you a dump of LeetCode solutions or animated explainers with no runnable code. Neither builds intuition. OCTALUM-PYLAB is a structured curriculum: every algorithm is an importable module with Big-O on top, a pytest covering it, and a phase that tells you when to learn it.
 
 ---
 
-## 🧭 Pick Your Path
-
-Skip to the track that matches where you are today:
-
-| If you are… | Start here | Time budget |
-|---|---|---|
-| 🌱 **A beginner** (new to Python) | [`build/foundations/`](build/foundations/) → [`build/data-structures/01-arrays-lists/`](build/data-structures/) | 4–6 weeks |
-| 🛠 **A mid-level dev** brushing up DSA | [`build/data-structures/`](build/data-structures/) → [`build/algorithms/`](build/algorithms/) | 3–4 weeks |
-| 🎯 **Interview cramming** (2–4 weeks out) | [`build/patterns/`](build/patterns/) → [`learn/cheatsheets/`](learn/cheatsheets/) | 2–4 weeks |
-| 🧑‍🏫 **An educator** building a syllabus | [`record/docs/`](record/docs/) + Jupyter notebooks in [`learn/notebooks/`](learn/notebooks/) | self-paced |
-| 🏆 **Already grinding LeetCode** | [`build/patterns/`](build/patterns/) + [`learn/cheatsheets/patterns-cheatsheet.md`](learn/cheatsheets/patterns-cheatsheet.md) | ongoing |
-
----
-
-## 🚀 Quick Start
-
-### Option 1 — GitHub Codespaces (zero install)
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Harery/OCTALUM-PYLAB?quickstart=1)
-
-### Option 2 — Local with [uv](https://docs.astral.sh/uv/) (recommended)
+## Install
 
 ```bash
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
-
-# Install uv if you don't have it
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Install everything (Python 3.12, deps, dev tools)
-uv sync --all-extras
-
-# Run the full test suite
-uv run pytest verify/tests -v
-
-# Get today's coding challenge
-uv run python ship/scripts/daily_challenge.py
-```
-
-### Option 3 — Plain `pip`
-
-```bash
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
-python3 -m venv .venv && source .venv/bin/activate
-pip install -e ".[dev,notebooks]"
-pytest verify/tests -v
+git clone https://github.com/Harery/OCTALUM-PYLAB.git && cd OCTALUM-PYLAB && uv sync --all-extras
 ```
 
 ---
 
-## 🗺️ The 8 Phases
+## Quickstart
+
+```bash
+uv run pytest verify/tests -v                          # run the 48-test suite
+uv run python ship/scripts/daily_challenge.py          # pull today's coding challenge
+uv run mkdocs serve                                    # serve docs at http://127.0.0.1:8000
+```
+
+Prefer `pip`? `python3 -m venv .venv && source .venv/bin/activate && pip install -e ".[dev,notebooks]"`. Prefer zero install? [Open in GitHub Codespaces](https://codespaces.new/Harery/OCTALUM-PYLAB?quickstart=1).
+
+---
+
+## What you get
+
+A workflow-shaped tree mirroring the 8 phases:
+
+```
+OCTALUM-PYLAB/
+├── intake/        Onboarding, prerequisites, roadmap
+├── learn/         Cheatsheets, Jupyter notebooks, animations
+├── build/         Foundations · data-structures · algorithms · patterns · challenges
+├── verify/        Pytest suite (48 tests, CI-gated)
+├── ship/          Devcontainer, Docker, CLI scripts (daily_challenge, interview_simulator)
+├── record/        MkDocs Material docs site
+└── govern/        Security, citation, code of conduct
+```
+
+### Big-O cheat sheet
+
+Quick reference; full version in [`learn/cheatsheets/big-o-cheatsheet.md`](learn/cheatsheets/big-o-cheatsheet.md).
+
+| Operation | Array      | Hash table | BST (balanced) | Heap      | Linked list |
+|:--        |:--         |:--         |:--             |:--        |:--          |
+| Access    | O(1)       | —          | O(log n)       | —         | O(n)        |
+| Search    | O(n)       | O(1) avg   | O(log n)       | O(n)      | O(n)        |
+| Insert    | O(n)       | O(1) avg   | O(log n)       | O(log n)  | O(1)        |
+| Delete    | O(n)       | O(1) avg   | O(log n)       | O(log n)  | O(1)        |
+
+Sorting: Quick / Merge / Heap = `O(n log n)` · Counting / Radix = `O(n + k)` · Bubble / Insertion = `O(n²)`.
+Graphs (V vertices, E edges): BFS/DFS = `O(V + E)` · Dijkstra (binary heap) = `O((V+E) log V)` · Floyd–Warshall = `O(V³)`.
+
+---
+
+## How it works
+
+Eight phases take you from `for` loops to FAANG mock interviews. Each phase has its own folder, a `README.md` with goals, runnable modules, and tests.
 
 ```mermaid
 flowchart LR
-    P1[1 · Foundations<br/>Python basics] --> P2[2 · Data Structures<br/>arrays → graphs]
-    P2 --> P3[3 · Basic Algorithms<br/>search · sort · recursion]
+    P1[1 · Foundations<br/>Python basics] --> P2[2 · Data structures<br/>arrays → graphs]
+    P2 --> P3[3 · Basic algorithms<br/>search · sort · recursion]
     P3 --> P4[4 · Advanced DS<br/>heaps · trie · union-find]
     P4 --> P5[5 · Patterns<br/>11 interview patterns]
-    P5 --> P6[6 · Advanced Algorithms<br/>DP · graphs · greedy · strings]
+    P5 --> P6[6 · Advanced algorithms<br/>DP · graphs · greedy · strings]
     P6 --> P7[7 · Challenges<br/>LeetCode E/M/H + system design]
     P7 --> P8[8 · Mastery<br/>optimize · mock · ship]
 ```
 
-| # | Phase | Folder | Focus | Est. |
-|---|---|---|---|---|
-| 1 | **Foundations** | [`build/foundations/`](build/foundations/) | Variables, control flow, functions, generators, decorators | 2 wk |
-| 2 | **Data Structures** | [`build/data-structures/`](build/data-structures/) | Arrays, strings, hash tables, linked lists, stacks, queues, trees, graphs | 4 wk |
-| 3 | **Basic Algorithms** | [`build/algorithms/01–03`](build/algorithms/) | Searching, sorting, recursion | 3 wk |
-| 4 | **Advanced DS** | [`build/data-structures/08-advanced/`](build/data-structures/) | Heaps, tries, segment trees, disjoint sets | 3 wk |
-| 5 | **Patterns** | [`build/patterns/`](build/patterns/) | 11 interview patterns that cover ~80% of LeetCode | 4 wk |
-| 6 | **Advanced Algorithms** | [`build/algorithms/04–07`](build/algorithms/) | DP, graph algorithms, greedy, string algorithms | 4 wk |
-| 7 | **Challenges** | `build/challenges/` | LeetCode easy / medium / hard + system design | ongoing |
-| 8 | **Mastery** | [`ship/scripts/`](ship/scripts/) | `interview_simulator.py`, `benchmark_sorting.py`, mock interviews | ongoing |
+| # | Phase                | Folder                                                                  | Focus                                                          | Est.    |
+|:--|:--                   |:--                                                                      |:--                                                             |:--      |
+| 1 | Foundations          | [`build/foundations/`](build/foundations/)                              | Variables, control flow, functions, generators, decorators    | 2 wk    |
+| 2 | Data structures      | [`build/data-structures/`](build/data-structures/)                      | Arrays, strings, hash tables, lists, stacks, queues, trees, graphs | 4 wk |
+| 3 | Basic algorithms     | [`build/algorithms/`](build/algorithms/)                                | Searching, sorting, recursion                                  | 3 wk    |
+| 4 | Advanced DS          | [`build/data-structures/08-advanced/`](build/data-structures/)          | Heaps, tries, segment trees, disjoint sets                     | 3 wk    |
+| 5 | Patterns             | [`build/patterns/`](build/patterns/)                                    | 11 interview patterns covering ~80% of LeetCode                | 4 wk    |
+| 6 | Advanced algorithms  | [`build/algorithms/`](build/algorithms/)                                | DP, graph algorithms, greedy, string algorithms                | 4 wk    |
+| 7 | Challenges           | `build/challenges/`                                                     | LeetCode easy / medium / hard + system design                  | ongoing |
+| 8 | Mastery              | [`ship/scripts/`](ship/scripts/)                                        | `interview_simulator.py`, `benchmark_sorting.py`, mock loops   | ongoing |
+
+### Pick your path
+
+| If you are…                                | Start here                                                                                                    | Time budget |
+|:--                                         |:--                                                                                                            |:--          |
+| Absolute beginner (new to Python)          | [`build/foundations/`](build/foundations/) → [`build/data-structures/`](build/data-structures/)               | 4–6 weeks   |
+| Intermediate dev brushing up DSA           | [`build/data-structures/`](build/data-structures/) → [`build/algorithms/`](build/algorithms/)                 | 3–4 weeks   |
+| Interview cram (2 weeks out)               | [`build/patterns/`](build/patterns/) → [`learn/cheatsheets/`](learn/cheatsheets/)                             | 2 weeks     |
+| Educator building a syllabus               | [`record/docs/`](record/docs/) + notebooks in [`learn/notebooks/`](learn/notebooks/)                          | self-paced  |
 
 ---
 
-## 🧩 Pattern Index
+## Pattern index
 
 Eleven battle-tested patterns. Each folder has a `README.md` (when to use it, complexity, classic problems) and a runnable `pattern.py`.
 
-| Pattern | Folder | When to reach for it |
-|---|---|---|
-| Sliding Window | [`patterns/sliding-window`](build/patterns/sliding-window) | Contiguous subarray/substring with a constraint |
-| Two Pointers | [`patterns/two-pointers`](build/patterns/two-pointers) | Sorted arrays, pair sums, in-place dedup |
-| Fast & Slow Pointers | [`patterns/fast-slow-pointers`](build/patterns/fast-slow-pointers) | Cycle detection, middle of linked list |
-| Merge Intervals | [`patterns/merge-intervals`](build/patterns/merge-intervals) | Overlapping intervals, meeting rooms |
-| Cyclic Sort | [`patterns/cyclic-sort`](build/patterns/cyclic-sort) | Arrays containing 1..N |
-| Tree BFS / DFS | [`patterns/tree-bfs-dfs`](build/patterns/tree-bfs-dfs) | Level order, path sums, tree serialization |
-| Two Heaps | [`patterns/two-heaps`](build/patterns/two-heaps) | Running median, scheduling |
-| Subsets | [`patterns/subsets`](build/patterns/subsets) | Combinations, permutations, power set |
-| Modified Binary Search | [`patterns/modified-binary-search`](build/patterns/modified-binary-search) | Rotated arrays, search in answer space |
-| Top-K Elements | [`patterns/top-k-elements`](build/patterns/top-k-elements) | K-th largest, K closest, frequency counts |
-| Island / Matrix DFS | [`patterns/island-matrix`](build/patterns/island-matrix) | Grid traversal, connected components |
+| Pattern                       | Folder                                                                                | When to reach for it                                |
+|:--                            |:--                                                                                    |:--                                                  |
+| Two Pointers                  | [`build/patterns/two-pointers`](build/patterns/two-pointers)                          | Sorted arrays, pair sums, in-place dedup            |
+| Sliding Window                | [`build/patterns/sliding-window`](build/patterns/sliding-window)                      | Contiguous subarray/substring with a constraint     |
+| Fast & Slow Pointers          | [`build/patterns/fast-slow-pointers`](build/patterns/fast-slow-pointers)              | Cycle detection, middle of linked list              |
+| Merge Intervals               | [`build/patterns/merge-intervals`](build/patterns/merge-intervals)                    | Overlapping intervals, meeting rooms                |
+| Cyclic Sort                   | [`build/patterns/cyclic-sort`](build/patterns/cyclic-sort)                            | Arrays containing `1..N`                            |
+| In-place Linked-List Reversal | [`build/patterns/fast-slow-pointers`](build/patterns/fast-slow-pointers)              | Reverse sublist, K-group reversal                   |
+| Tree BFS                      | [`build/patterns/tree-bfs-dfs`](build/patterns/tree-bfs-dfs)                          | Level order, right-side view, zig-zag               |
+| Tree DFS                      | [`build/patterns/tree-bfs-dfs`](build/patterns/tree-bfs-dfs)                          | Path sums, tree serialization                       |
+| Two Heaps                     | [`build/patterns/two-heaps`](build/patterns/two-heaps)                                | Running median, scheduling                          |
+| Subsets                       | [`build/patterns/subsets`](build/patterns/subsets)                                    | Combinations, permutations, power set               |
+| Modified Binary Search        | [`build/patterns/modified-binary-search`](build/patterns/modified-binary-search)      | Rotated arrays, search in answer space              |
+
+Bonus: [`top-k-elements`](build/patterns/top-k-elements) and [`island-matrix`](build/patterns/island-matrix) ship alongside the canonical eleven.
 
 ---
 
-## ⏱️ Big-O Cheat Sheet
+## If you also use…
 
-Quick reference — full version in [`learn/cheatsheets/big-o-cheatsheet.md`](learn/cheatsheets/big-o-cheatsheet.md).
-
-| Operation | Array | Hash Table | BST (balanced) | Heap | Linked List |
-|---|---|---|---|---|---|
-| Access | O(1) | — | O(log n) | — | O(n) |
-| Search | O(n) | O(1) avg | O(log n) | O(n) | O(n) |
-| Insert | O(n) | O(1) avg | O(log n) | O(log n) | O(1) |
-| Delete | O(n) | O(1) avg | O(log n) | O(log n) | O(1) |
-
-**Sorting:** Quick/Merge/Heap = `O(n log n)` · Counting/Radix = `O(n + k)` · Bubble/Insertion = `O(n²)`
-
-**Graphs (V vertices, E edges):** BFS/DFS = `O(V + E)` · Dijkstra (binary heap) = `O((V+E) log V)` · Floyd–Warshall = `O(V³)`
+Positive cross-references — these pair well with OCTALUM-PYLAB: *Cracking the Coding Interview* (CtCI) for theory and behavioral prep, *Grokking the Coding Interview* for the pattern taxonomy this repo follows, *Elements of Programming Interviews* (EPI) for harder problems, and [NeetCode](https://neetcode.io/) for video walkthroughs.
 
 ---
 
-## 📁 Repo Layout
+## FAQ
 
-The 8 top-level folders mirror an engineering workflow (`intake → learn → build → verify → ship → record → govern`), so you can find anything in seconds:
+### How do I start?
 
-```
-OCTALUM-PYLAB/
-├── intake/        Onboarding · prerequisites · roadmap
-├── learn/         Cheat sheets · Jupyter notebooks · animations
-├── build/         The core: foundations, data-structures, algorithms, patterns, challenges
-├── verify/        Pytest suite + coverage
-├── ship/          Devcontainer, Docker, CLI scripts (daily_challenge, interview_simulator, …)
-├── record/        MkDocs site source (record/docs)
-└── govern/        Security & compliance
-```
+Clone, run `uv sync --all-extras`, then open [`build/foundations/`](build/foundations/) if you're new to Python or [`build/data-structures/`](build/data-structures/) if you already know Python. Every module is runnable: `python build/data-structures/01-arrays-lists/array.py` executes it.
 
----
+### What's the time commitment?
 
-## 📚 Docs
+Plan on 8–12 weeks part-time (10 hrs/week) to traverse all 8 phases. Cramming with 2 weeks until your loop? Skip to [`build/patterns/`](build/patterns/) plus [`learn/cheatsheets/`](learn/cheatsheets/) — those cover ~80% of LeetCode mediums.
 
-The full docs site is built with **MkDocs Material** and deployed to **GitHub Pages**:
+### Which patterns matter most for FAANG?
 
-➡️ **<https://harery.github.io/OCTALUM-PYLAB/>**
+From real FAANG interview loops: Sliding Window, Two Pointers, Tree BFS/DFS, Two Heaps (top-K), Modified Binary Search, DP, and Graph traversal. All eleven are in [`build/patterns/`](build/patterns/) with classic problems mapped to each.
 
-Build it locally:
+### How is this different from NeetCode, LeetCode, CtCI?
 
-```bash
-uv run mkdocs serve   # → http://127.0.0.1:8000
-```
+It complements them. Read CtCI for theory, watch NeetCode for visuals, grind LeetCode for raw volume — then use OCTALUM-PYLAB as the runnable companion with Big-O annotations and pytest coverage on every algorithm.
 
----
+### Can I use this in a classroom?
 
-## ✅ Testing
+Yes. There's a syllabus draft in [`record/docs/`](record/docs/) and Jupyter notebooks in [`learn/notebooks/`](learn/notebooks/). Cite via [`CITATION.cff`](CITATION.cff) if you adopt it.
 
-```bash
-uv run pytest verify/tests -v          # all tests
-uv run pytest verify/tests --no-cov -q # quick run
-uv run ruff check .                     # lint
-uv run ruff format --check .            # format
-uv run pyright build/                   # type check
-```
+### Why GPL and not MIT?[^1]
 
-CI runs the full gate on every push & PR (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+Educational material benefits from staying open. GPL-3.0-or-later means any fork or derivative remains free for the next learner — the same way this repo was free for you.
+
+[^1]: The rest of the OCTALUME family ships under MIT; OCTALUM-PYLAB is the one deliberate exception because its primary output is curriculum, not infrastructure.
 
 ---
 
-## 🤝 Contributing
+## Documentation
 
-PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good first issues are tagged [`good first issue`](https://github.com/Harery/OCTALUM-PYLAB/labels/good%20first%20issue). The repo follows [Conventional Commits](https://www.conventionalcommits.org/) and the [Contributor Covenant](CODE_OF_CONDUCT.md).
-
-Easy ways to help:
-
-- Add a new pattern or LeetCode solution (template in `.github/ISSUE_TEMPLATE/new_problem.yml`)
-- Write a Jupyter notebook visualization for `learn/notebooks/`
-- Improve a cheatsheet in `learn/cheatsheets/`
-- File an issue when complexity annotations are wrong or missing
+- Live docs site (MkDocs Material): <https://harery.github.io/OCTALUM-PYLAB/>
+- Cheatsheets: [`learn/cheatsheets/`](learn/cheatsheets/)
+- Notebooks: [`learn/notebooks/`](learn/notebooks/)
+- Marketing & social preview: [MARKETING.md](MARKETING.md) · [SOCIAL_PREVIEW.md](SOCIAL_PREVIEW.md)
+- Progress journal: [PROGRESS.md](PROGRESS.md)
 
 ---
 
-## ❓ FAQ — Is This Python DSA Course Right for Me?
+## Roadmap
 
-### How do I start learning Python data structures and algorithms with this repo?
-Clone the repo, run `uv sync --all-extras` (or `pip install -e ".[dev,notebooks]"`), then open [`build/foundations/`](build/foundations/) if you're new to Python or [`build/data-structures/`](build/data-structures/) if you already know Python. Each module is runnable and self-contained — `python build/data-structures/01-arrays-lists/array.py` will execute it.
-
-### What's the time commitment for full FAANG interview prep?
-Plan on **8–12 weeks part-time** (10 hrs/week) to go through all 8 phases. If you're cramming for a coding interview in 2–4 weeks, jump straight to [`build/patterns/`](build/patterns/) and [`learn/cheatsheets/`](learn/cheatsheets/) — that's the fastest path through the 11 patterns that cover roughly 80% of LeetCode mediums.
-
-### Which interview patterns matter most for FAANG (Google, Meta, Amazon, Apple, Netflix)?
-From data on real FAANG interview loops, the top patterns are: **Sliding Window, Two Pointers, BFS/DFS on trees, Top-K (heap), Modified Binary Search, Dynamic Programming, and Graph traversal**. All eleven are in [`build/patterns/`](build/patterns/) with classic LeetCode problems mapped to each.
-
-### Is this a replacement for *Cracking the Coding Interview* or LeetCode Premium?
-It complements them. Read CtCI for theory and behavioral prep, grind LeetCode for raw volume, and use OCTALUM-PYLAB as the **runnable companion** — every algorithm has Big-O annotations, pytest coverage, and a "when to reach for this pattern" note.
-
-### Does this work for competitive programming (Codeforces, ICPC)?
-Yes — the [`build/algorithms/`](build/algorithms/) phase covers DP, graph algorithms (Dijkstra, Bellman-Ford, Kruskal, Floyd–Warshall), string algorithms (KMP, Rabin-Karp, Z-function), and number theory — all the staples for Codeforces Div 2 and ICPC regionals.
-
-### Is it free? Can I use it for my classroom or bootcamp?
-Yes — licensed **GPL-3.0-or-later** for the code; please cite via [`CITATION.cff`](CITATION.cff) if you use it in research or teaching. Educators: there's a syllabus draft in [`record/docs/`](record/docs/) and notebooks in [`learn/notebooks/`](learn/notebooks/).
+- **2026-Q3** — Video walkthroughs for each of the 11 patterns
+- **2026-Q4** — System-design module (capstone for phase 7)
+- **2027-Q1** — Go and Rust ports of the pattern catalog
+- **2027-Q2** — Interactive web playground (run patterns in-browser via Pyodide)
+- **Ongoing** — New LeetCode solutions, notebook visualizations, classroom-ready slide decks
 
 ---
 
-## 📜 License
+## Contributing · License · Security
 
-**GNU General Public License v3.0 or later** — see [LICENSE](LICENSE).  
-You may use, modify, and redistribute under the terms of GPLv3.
+- Contributing: [CONTRIBUTING.md](CONTRIBUTING.md) · [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — good first issues are tagged [`good first issue`](https://github.com/Harery/OCTALUM-PYLAB/labels/good%20first%20issue).
+- License: **GPL-3.0-or-later** — see [LICENSE](LICENSE). Cite via [CITATION.cff](CITATION.cff).
+- Security: [SECURITY.md](SECURITY.md) — report vulnerabilities privately.
 
-If you use OCTALUM-PYLAB in research or teaching, please cite it via [`CITATION.cff`](CITATION.cff).
-
----
-
-## 🙏 Acknowledgments
-
-Inspiration drawn from [TheAlgorithms/Python](https://github.com/TheAlgorithms/Python), [keon/algorithms](https://github.com/keon/algorithms), [donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer), and the Grokking the Coding Interview series.
+<!-- ============================================================== -->
+<!-- UNIFIED OCTALUM FAMILY FOOTER — keep verbatim across every repo -->
+<!-- ============================================================== -->
 
 ---
 
-<p align="center">
-  Built by <a href="https://harery.com">Mohamed Harery</a> · part of the <strong>OCTALUME</strong> project family.<br/>
-  <em>If this repo helped you land a job, an interview, or a deeper understanding — please ⭐ it.</em>
-</p>
+<div align="center">
+
+### Drawn by the same hand
+
+A working portfolio of digital infrastructure, designed and maintained by [**Mohamed Harery**](https://harery.com) — Architect of Digital Systems.
+
+| Sheet | Repo | What it is |
+|:--:|:--|:--|
+| 00 | [**harery.com**](https://github.com/Harery/Mo) | The studio — portfolio, ledger, contact |
+| 01 | [**OCTALUME**](https://github.com/Harery/OCTALUME) | 8-phase enterprise SDLC framework |
+| 02 | [**OCTALUM-PYLAB**](https://github.com/Harery/OCTALUM-PYLAB) | Python DSA & coding-interview prep |
+| 03 | [**OCTALUM-PULSE**](https://github.com/Harery/OCTALUM-PULSE) | Cross-distro Linux maintenance CLI |
+| 04 | [**octalum-bdtb**](https://github.com/Harery/octalum-bdtb) | Brain-dump → spec-kit-shaped plan |
+
+<sub>
+  <a href="https://harery.com">harery.com</a> ·
+  <a href="https://github.com/Harery">github.com/Harery</a> ·
+  <a href="https://www.linkedin.com/in/harery/">LinkedIn</a>
+</sub>
+
+<sub>BLUEPRINT · drawn 2026 · MIT-licensed code · all drawings reserved</sub>
+
+</div>
