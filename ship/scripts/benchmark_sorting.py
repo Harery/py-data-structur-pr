@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-OCTALUM-PYLAB Sorting Benchmark
+LuminaPy Sorting Benchmark
 
 Compare performance of different sorting algorithms.
 

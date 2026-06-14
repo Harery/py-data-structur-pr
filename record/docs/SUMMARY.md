@@ -1,6 +1,6 @@
 # Documentation
 
-Welcome to the OCTALUM-PYLAB documentation.
+Welcome to the LuminaPy documentation.
 
 ## Getting Started
 

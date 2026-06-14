@@ -1,6 +1,6 @@
-# Contributing to OCTALUM-PYLAB
+# Contributing to LuminaPy
 
-Thank you for your interest in contributing to OCTALUM-PYLAB! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to LuminaPy! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -39,8 +39,8 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
+git clone https://github.com/YOUR_USERNAME/LuminaPy.git
+cd LuminaPy
 
 # Install uv
 pip install uv
@@ -131,9 +131,9 @@ refactor: simplify merge sort code
 
 ## Questions?
 
-- Open a [Discussion](https://github.com/Harery/OCTALUM-PYLAB/discussions)
+- Open a [Discussion](https://github.com/Harery/LuminaPy/discussions)
 - Email: octalume@harery.com
 
 ---
 
-Thank you for helping make OCTALUM-PYLAB better!
+Thank you for helping make LuminaPy better!

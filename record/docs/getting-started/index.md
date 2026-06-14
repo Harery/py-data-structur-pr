@@ -1,6 +1,6 @@
 # Getting Started
 
-Welcome to OCTALUM-PYLAB! This guide will help you set up your environment and start your journey to mastering Python data structures and algorithms.
+Welcome to LuminaPy! This guide will help you set up your environment and start your journey to mastering Python data structures and algorithms.
 
 ## What You'll Learn
 
@@ -23,8 +23,8 @@ Before you begin, make sure you have:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
+git clone https://github.com/Harery/LuminaPy.git
+cd LuminaPy
 
 # Install dependencies
 pip install -e ".[dev]"

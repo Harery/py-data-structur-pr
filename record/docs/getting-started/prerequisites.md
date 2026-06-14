@@ -1,6 +1,6 @@
 # Prerequisites
 
-Before starting with OCTALUM-PYLAB, ensure you have the following installed and configured.
+Before starting with LuminaPy, ensure you have the following installed and configured.
 
 ## Required Software
 

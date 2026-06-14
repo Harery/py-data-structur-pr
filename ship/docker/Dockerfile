@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 
 LABEL maintainer="OCTALUME <octalume@harery.com>"
-LABEL description="OCTALUM-PYLAB Learning Environment"
+LABEL description="LuminaPy Learning Environment"
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1

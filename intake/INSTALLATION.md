@@ -1,12 +1,12 @@
 # Installation Guide
 
-Set up your OCTALUM-PYLAB development environment.
+Set up your LuminaPy development environment.
 
 ## Option 1: GitHub Codespaces (Recommended)
 
 The fastest way to start — no local installation required!
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Harery/OCTALUM-PYLAB)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Harery/LuminaPy)
 
 1. Click the button above
 2. Sign in to GitHub (if not already)
@@ -26,8 +26,8 @@ The fastest way to start — no local installation required!
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
+git clone https://github.com/Harery/LuminaPy.git
+cd LuminaPy
 ```
 
 ### Step 2: Install uv
@@ -78,10 +78,10 @@ uv run pyright build/
 
 ```bash
 # Build the image
-docker build -t octalum-pylab -f ship/docker/Dockerfile .
+docker build -t luminapy -f ship/docker/Dockerfile .
 
 # Run container
-docker run -it -v $(pwd):/app octalum-pylab
+docker run -it -v $(pwd):/app luminapy
 ```
 
 ---
@@ -159,4 +159,4 @@ chmod +x .githooks/*
 
 ---
 
-*Questions? [Open a discussion](https://github.com/Harery/OCTALUM-PYLAB/discussions)*
+*Questions? [Open a discussion](https://github.com/Harery/LuminaPy/discussions)*

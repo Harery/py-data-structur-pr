@@ -1,13 +1,13 @@
 # Marketing copy
 
-Ready-to-post copy for spreading **OCTALUM-PYLAB**. Owner: copy, edit, post.
-Repo: https://github.com/Harery/OCTALUM-PYLAB
+Ready-to-post copy for spreading **LuminaPy**. Owner: copy, edit, post.
+Repo: https://github.com/Harery/LuminaPy
 
 ---
 
 ## 1. One-paragraph pitch
 
-> **OCTALUM-PYLAB** is an open-source Python lab for mastering Data Structures &
+> **LuminaPy** is an open-source Python lab for mastering Data Structures &
 > Algorithms — not a snippet dump, but a real 8-phase curriculum. Every
 > implementation is runnable, tested, and Big-O annotated. It covers Python
 > foundations, classical and advanced DS, eleven interview patterns (Sliding
@@ -20,7 +20,7 @@ Repo: https://github.com/Harery/OCTALUM-PYLAB
 
 ## 2. Tweet thread (8 tweets)
 
-**1/8** I just open-sourced **OCTALUM-PYLAB** — an 8-phase Python lab for mastering Data Structures & Algorithms. Not another snippet dump. A real curriculum with tests, Big-O, and patterns. 🧵 https://github.com/Harery/OCTALUM-PYLAB
+**1/8** I just open-sourced **LuminaPy** — an 8-phase Python lab for mastering Data Structures & Algorithms. Not another snippet dump. A real curriculum with tests, Big-O, and patterns. 🧵 https://github.com/Harery/LuminaPy
 
 **2/8** Most DSA repos are either 5,000 unstructured LeetCode dumps or pretty animations with no code you can run. PYLAB is different — every algorithm is a small importable module you can run, edit, and `pytest`.
 
@@ -43,13 +43,13 @@ Repo: https://github.com/Harery/OCTALUM-PYLAB
 **7/8** One-click setup: open in GitHub Codespaces and you're coding in 30 seconds. Or `uv sync --all-extras` locally. Python 3.12+. GPLv3.
 
 **8/8** Free, MIT-spirited but copyleft, no upsells. If it helps you nail an interview, ⭐ the repo and tell a friend cramming for FAANG.
-👉 https://github.com/Harery/OCTALUM-PYLAB
+👉 https://github.com/Harery/LuminaPy
 
 ---
 
 ## 3. LinkedIn post draft
 
-> Open-sourcing something I'm proud of: **OCTALUM-PYLAB** — a hands-on Python lab for mastering Data Structures & Algorithms.
+> Open-sourcing something I'm proud of: **LuminaPy** — a hands-on Python lab for mastering Data Structures & Algorithms.
 >
 > After 15+ years in cybersecurity and cloud infrastructure, I keep meeting strong engineers who freeze in DSA interviews — not because they can't code, but because they never had a structured way to *practice* the patterns.
 >
@@ -64,7 +64,7 @@ Repo: https://github.com/Harery/OCTALUM-PYLAB
 >
 > Free and open source under GPLv3. Built for students, mid-level engineers cramming for FAANG, and educators looking for a syllabus they can fork.
 >
-> ⭐ https://github.com/Harery/OCTALUM-PYLAB
+> ⭐ https://github.com/Harery/LuminaPy
 >
 > Would love feedback, issues, and PRs from this community.
 >
@@ -80,7 +80,7 @@ Repo: https://github.com/Harery/OCTALUM-PYLAB
 
 Hey r/learnprogramming,
 
-I built **OCTALUM-PYLAB** (https://github.com/Harery/OCTALUM-PYLAB) because I got tired of recommending the same patchwork of resources to people learning Python + DSA. It's an actual curriculum, not a snippet dump.
+I built **LuminaPy** (https://github.com/Harery/LuminaPy) because I got tired of recommending the same patchwork of resources to people learning Python + DSA. It's an actual curriculum, not a snippet dump.
 
 **What's in it**
 - 8 phases: Foundations → Data Structures → Algorithms → Advanced DS → Patterns → Advanced Algorithms → Challenges → Mastery
@@ -113,7 +113,7 @@ There's a "Pick Your Path" section in the README for beginners / mid-level / int
 
 If you're 2–4 weeks out from a FAANG interview and tired of grinding random LeetCode problems, here's the repo I wish I had:
 
-**OCTALUM-PYLAB** — https://github.com/Harery/OCTALUM-PYLAB
+**LuminaPy** — https://github.com/Harery/LuminaPy
 
 It's organized around the 11 interview patterns that cover ~80% of medium/hard LeetCode questions (Sliding Window, Two Pointers, Fast/Slow, Merge Intervals, Cyclic Sort, Tree BFS/DFS, Two Heaps, Subsets, Modified Binary Search, Top-K, Island/Matrix). Every pattern has its own folder with a README explaining *when to reach for it*, a runnable `pattern.py`, and complexity annotations.
 

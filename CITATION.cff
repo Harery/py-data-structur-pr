@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "OCTALUM-PYLAB: Master Python Data Structures & Algorithms Through Guided Experimentation"
+title: "LuminaPy: Master Python Data Structures & Algorithms Through Guided Experimentation"
 message: "If you use this project in teaching or research, please cite it as below."
 type: software
 authors:
@@ -7,10 +7,10 @@ authors:
     given-names: Mohamed
     email: mohamed@harery.com
     website: "https://harery.com"
-repository-code: "https://github.com/Harery/OCTALUM-PYLAB"
-url: "https://harery.github.io/OCTALUM-PYLAB/"
+repository-code: "https://github.com/Harery/LuminaPy"
+url: "https://harery.github.io/LuminaPy/"
 abstract: >
-  OCTALUM-PYLAB is an 8-phase Python curriculum for mastering data structures,
+  LuminaPy is an 8-phase Python curriculum for mastering data structures,
   algorithms, and coding-interview patterns through hands-on, tested, and
   Big-O-annotated lab exercises. It covers foundations, classical and advanced
   data structures, 11 interview patterns, dynamic programming, graph

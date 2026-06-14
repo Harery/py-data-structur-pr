@@ -1,6 +1,6 @@
 # Prerequisites
 
-Before starting OCTALUM-PYLAB, ensure you have the following:
+Before starting LuminaPy, ensure you have the following:
 
 ## Required
 

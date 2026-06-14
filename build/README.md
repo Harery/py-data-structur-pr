@@ -1,6 +1,6 @@
 # 🏗️ Build Module
 
-Core learning content for OCTALUM-PYLAB, organized into 5 submodules.
+Core learning content for LuminaPy, organized into 5 submodules.
 
 ## Structure
 

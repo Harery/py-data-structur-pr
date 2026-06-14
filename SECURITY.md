@@ -35,7 +35,7 @@ Instead, please:
 
 ## Security Best Practices
 
-When using OCTALUM-PYLAB:
+When using LuminaPy:
 
 - Always use the latest version
 - Review code before running examples
@@ -63,4 +63,4 @@ For production use, prefer standard library or well-tested third-party libraries
 
 ---
 
-Thank you for helping keep OCTALUM-PYLAB secure!
+Thank you for helping keep LuminaPy secure!

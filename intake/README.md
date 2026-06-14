@@ -1,6 +1,6 @@
-# 🚀 Getting Started with OCTALUM-PYLAB
+# 🚀 Getting Started with LuminaPy
 
-Welcome to **OCTALUM-PYLAB** — your guided journey through Python Data Structures & Algorithms!
+Welcome to **LuminaPy** — your guided journey through Python Data Structures & Algorithms!
 
 ## Quick Navigation
 
@@ -10,11 +10,11 @@ Welcome to **OCTALUM-PYLAB** — your guided journey through Python Data Structu
 | [Installation](INSTALLATION.md) | Setup instructions |
 | [Roadmap](ROADMAP.md) | Learning path overview |
 
-## What is OCTALUM-PYLAB?
+## What is LuminaPy?
 
-OCTALUM-PYLAB is a comprehensive learning laboratory designed to take you from Python basics to algorithm mastery through structured, hands-on practice.
+LuminaPy is a comprehensive learning laboratory designed to take you from Python basics to algorithm mastery through structured, hands-on practice.
 
-### Why OCTALUM-PYLAB?
+### Why LuminaPy?
 
 | Feature | Benefit |
 |---------|---------|
@@ -78,8 +78,8 @@ Update [PROGRESS.md](../PROGRESS.md) as you complete modules to:
 ## Need Help?
 
 - 📖 Check the [Documentation](../record/docs/)
-- 💬 Start a [Discussion](https://github.com/Harery/OCTALUM-PYLAB/discussions)
-- 🐛 Report a [Bug](https://github.com/Harery/OCTALUM-PYLAB/issues)
+- 💬 Start a [Discussion](https://github.com/Harery/LuminaPy/discussions)
+- 🐛 Report a [Bug](https://github.com/Harery/LuminaPy/issues)
 
 ---
 

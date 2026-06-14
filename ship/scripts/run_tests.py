@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-OCTALUM-PYLAB Test Runner
+LuminaPy Test Runner
 
 Run tests for the learning repository.
 
@@ -66,7 +66,7 @@ def run_watch() -> int:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="OCTALUM-PYLAB Test Runner")
+    parser = argparse.ArgumentParser(description="LuminaPy Test Runner")
     parser.add_argument(
         "module",
         nargs="?",

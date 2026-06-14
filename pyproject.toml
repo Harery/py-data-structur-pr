@@ -1,5 +1,5 @@
 [project]
-name = "octalum-pylab"
+name = "luminapy"
 version = "1.0.0"
 description = "Master Python Data Structures & Algorithms Through Guided Experimentation - 8 phases of hands-on labs, patterns, and interview prep."
 readme = "README.md"
@@ -67,12 +67,12 @@ visualizations = [
 # interview-sim = "ship.scripts.interview_simulator:main"
 
 [project.urls]
-Homepage = "https://github.com/Harery/OCTALUM-PYLAB"
-Documentation = "https://harery.com/octalum-pylab"
-Repository = "https://github.com/Harery/OCTALUM-PYLAB"
-Issues = "https://github.com/Harery/OCTALUM-PYLAB/issues"
+Homepage = "https://github.com/Harery/LuminaPy"
+Documentation = "https://harery.com/luminapy"
+Repository = "https://github.com/Harery/LuminaPy"
+Issues = "https://github.com/Harery/LuminaPy/issues"
 
-# OCTALUM-PYLAB is a curriculum repo, not a distributable library — declare no
+# LuminaPy is a curriculum repo, not a distributable library — declare no
 # packages so editable installs work without setuptools auto-discovery picking
 # up `build/`, `learn/`, etc.
 [tool.setuptools]
@@ -287,5 +287,5 @@ test = [
 # MKDOCS CONFIGURATION
 # =============================================================================
 [tool.mkdocs]
-site_name = "OCTALUM-PYLAB"
-site_url = "https://harery.com/octalum-pylab"
+site_name = "LuminaPy"
+site_url = "https://harery.com/luminapy"

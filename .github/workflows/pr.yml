@@ -152,7 +152,7 @@ jobs:
             const pr_number = context.issue.number;
             const author = context.payload.pull_request.user.login;
 
-            const welcomeMessage = `## 🎉 Welcome to OCTALUM-PYLAB!
+            const welcomeMessage = `## 🎉 Welcome to LuminaPy!
 
             Thank you @${author} for your first contribution! We're excited to have you here.
 
@@ -167,7 +167,7 @@ jobs:
             - [Code of Conduct](CODE_OF_CONDUCT.md)
             - [Project Structure](README.md#-directory-structure)
 
-            Our team will review your PR soon. Thank you for helping make OCTALUM-PYLAB better! 🚀
+            Our team will review your PR soon. Thank you for helping make LuminaPy better! 🚀
 
             <details>
             <summary>💡 Tips for a Smooth Review</summary>

@@ -2,15 +2,15 @@
 
 <div align="center">
 
-# OCTALUM-PYLAB
+# LuminaPy
 
 **Master Python data structures and algorithms by running code you wrote — not memorizing code you read.**
 
-[![CI](https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml)
+[![CI](https://github.com/Harery/LuminaPy/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Harery/LuminaPy/actions/workflows/ci.yml)
 [![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3120/)
-[![Tests 48/48](https://img.shields.io/badge/tests-48%2F48-brightgreen?logo=pytest&logoColor=white)](https://github.com/Harery/OCTALUM-PYLAB/actions/workflows/ci.yml)
-[![GitHub stars](https://img.shields.io/github/stars/Harery/OCTALUM-PYLAB?style=flat&logo=github&label=stars)](https://github.com/Harery/OCTALUM-PYLAB/stargazers)
+[![Tests 48/48](https://img.shields.io/badge/tests-48%2F48-brightgreen?logo=pytest&logoColor=white)](https://github.com/Harery/LuminaPy/actions/workflows/ci.yml)
+[![GitHub stars](https://img.shields.io/github/stars/Harery/LuminaPy?style=flat&logo=github&label=stars)](https://github.com/Harery/LuminaPy/stargazers)
 
 </div>
 
@@ -24,14 +24,14 @@
 
 ## The problem
 
-Most Python DSA repos give you a dump of LeetCode solutions or animated explainers with no runnable code. Neither builds intuition. OCTALUM-PYLAB is a structured curriculum: every algorithm is an importable module with Big-O on top, a pytest covering it, and a phase that tells you when to learn it.
+Most Python DSA repos give you a dump of LeetCode solutions or animated explainers with no runnable code. Neither builds intuition. LuminaPy is a structured curriculum: every algorithm is an importable module with Big-O on top, a pytest covering it, and a phase that tells you when to learn it.
 
 ---
 
 ## Install
 
 ```bash
-git clone https://github.com/Harery/OCTALUM-PYLAB.git && cd OCTALUM-PYLAB && uv sync --all-extras
+git clone https://github.com/Harery/LuminaPy.git && cd LuminaPy && uv sync --all-extras
 ```
 
 ---
@@ -44,7 +44,7 @@ uv run python ship/scripts/daily_challenge.py          # pull today's coding cha
 uv run mkdocs serve                                    # serve docs at http://127.0.0.1:8000
 ```
 
-Prefer `pip`? `python3 -m venv .venv && source .venv/bin/activate && pip install -e ".[dev,notebooks]"`. Prefer zero install? [Open in GitHub Codespaces](https://codespaces.new/Harery/OCTALUM-PYLAB?quickstart=1).
+Prefer `pip`? `python3 -m venv .venv && source .venv/bin/activate && pip install -e ".[dev,notebooks]"`. Prefer zero install? [Open in GitHub Codespaces](https://codespaces.new/Harery/LuminaPy?quickstart=1).
 
 ---
 
@@ -53,7 +53,7 @@ Prefer `pip`? `python3 -m venv .venv && source .venv/bin/activate && pip install
 A workflow-shaped tree mirroring the 8 phases:
 
 ```
-OCTALUM-PYLAB/
+LuminaPy/
 ├── intake/        Onboarding, prerequisites, roadmap
 ├── learn/         Cheatsheets, Jupyter notebooks, animations
 ├── build/         Foundations · data-structures · algorithms · patterns · challenges
@@ -140,7 +140,7 @@ Bonus: [`top-k-elements`](build/patterns/top-k-elements) and [`island-matrix`](b
 
 ## If you also use…
 
-Positive cross-references — these pair well with OCTALUM-PYLAB: *Cracking the Coding Interview* (CtCI) for theory and behavioral prep, *Grokking the Coding Interview* for the pattern taxonomy this repo follows, *Elements of Programming Interviews* (EPI) for harder problems, and [NeetCode](https://neetcode.io/) for video walkthroughs.
+Positive cross-references — these pair well with LuminaPy: *Cracking the Coding Interview* (CtCI) for theory and behavioral prep, *Grokking the Coding Interview* for the pattern taxonomy this repo follows, *Elements of Programming Interviews* (EPI) for harder problems, and [NeetCode](https://neetcode.io/) for video walkthroughs.
 
 ---
 
@@ -160,7 +160,7 @@ From real FAANG interview loops: Sliding Window, Two Pointers, Tree BFS/DFS, Two
 
 ### How is this different from NeetCode, LeetCode, CtCI?
 
-It complements them. Read CtCI for theory, watch NeetCode for visuals, grind LeetCode for raw volume — then use OCTALUM-PYLAB as the runnable companion with Big-O annotations and pytest coverage on every algorithm.
+It complements them. Read CtCI for theory, watch NeetCode for visuals, grind LeetCode for raw volume — then use LuminaPy as the runnable companion with Big-O annotations and pytest coverage on every algorithm.
 
 ### Can I use this in a classroom?
 
@@ -170,13 +170,13 @@ Yes. There's a syllabus draft in [`record/docs/`](record/docs/) and Jupyter note
 
 Educational material benefits from staying open. GPL-3.0-or-later means any fork or derivative remains free for the next learner — the same way this repo was free for you.
 
-[^1]: The rest of the OCTALUME family ships under MIT; OCTALUM-PYLAB is the one deliberate exception because its primary output is curriculum, not infrastructure.
+[^1]: The rest of the OCTALUME family ships under MIT; LuminaPy is the one deliberate exception because its primary output is curriculum, not infrastructure.
 
 ---
 
 ## Documentation
 
-- Live docs site (MkDocs Material): <https://harery.github.io/OCTALUM-PYLAB/>
+- Live docs site (MkDocs Material): <https://harery.github.io/LuminaPy/>
 - Cheatsheets: [`learn/cheatsheets/`](learn/cheatsheets/)
 - Notebooks: [`learn/notebooks/`](learn/notebooks/)
 - Marketing & social preview: [MARKETING.md](MARKETING.md) · [SOCIAL_PREVIEW.md](SOCIAL_PREVIEW.md)
@@ -196,7 +196,7 @@ Educational material benefits from staying open. GPL-3.0-or-later means any fork
 
 ## Contributing · License · Security
 
-- Contributing: [CONTRIBUTING.md](CONTRIBUTING.md) · [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — good first issues are tagged [`good first issue`](https://github.com/Harery/OCTALUM-PYLAB/labels/good%20first%20issue).
+- Contributing: [CONTRIBUTING.md](CONTRIBUTING.md) · [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — good first issues are tagged [`good first issue`](https://github.com/Harery/LuminaPy/labels/good%20first%20issue).
 - License: **GPL-3.0-or-later** — see [LICENSE](LICENSE). Cite via [CITATION.cff](CITATION.cff).
 - Security: [SECURITY.md](SECURITY.md) — report vulnerabilities privately.
 
@@ -216,7 +216,7 @@ A working portfolio of digital infrastructure, designed and maintained by [**Moh
 |:--:|:--|:--|
 | 00 | [**harery.com**](https://github.com/Harery/Mo) | The studio — portfolio, ledger, contact |
 | 01 | [**OCTALUME**](https://github.com/Harery/OCTALUME) | 8-phase enterprise SDLC framework |
-| 02 | [**OCTALUM-PYLAB**](https://github.com/Harery/OCTALUM-PYLAB) | Python DSA & coding-interview prep |
+| 02 | [**LuminaPy**](https://github.com/Harery/LuminaPy) | Python DSA & coding-interview prep |
 | 03 | [**OCTALUM-PULSE**](https://github.com/Harery/OCTALUM-PULSE) | Cross-distro Linux maintenance CLI |
 | 04 | [**octalum-bdtb**](https://github.com/Harery/octalum-bdtb) | 12-stage Claude Code Skill — brain-dump → product |
 

@@ -31,14 +31,14 @@ A clean, technical, slightly futuristic feel — matches the "lab" metaphor.
 - Or alternatively: a minimal binary-tree / graph diagram in cyan strokes
 
 **Footer band**
-- `github.com/Harery/OCTALUM-PYLAB` in monospace (JetBrains Mono), 22px, `#94A3B8`
+- `github.com/Harery/LuminaPy` in monospace (JetBrains Mono), 22px, `#94A3B8`
 - A small Python logo and an MIT/GPLv3 badge in the corner
 
 ## Quick way to produce it
 
 The fastest path is to ask a generative image model with this prompt:
 
-> A 1280×640 GitHub social preview banner. Deep navy gradient background with a faint hex grid. Left side: large white wordmark "OCTALUM·PYLAB" in a bold geometric sans, with the tagline "Master Python DSA through guided experimentation" below in soft white, and a small indigo subline "8 phases · 11 patterns · Big-O annotated · Tested". Right side: a chain of 8 numbered hexagons arranged in a gentle S-curve, gradient teal→magenta. Footer: monospace URL `github.com/Harery/OCTALUM-PYLAB` in muted slate. Modern, technical, slightly futuristic. No people. No clutter.
+> A 1280×640 GitHub social preview banner. Deep navy gradient background with a faint hex grid. Left side: large white wordmark "OCTALUM·PYLAB" in a bold geometric sans, with the tagline "Master Python DSA through guided experimentation" below in soft white, and a small indigo subline "8 phases · 11 patterns · Big-O annotated · Tested". Right side: a chain of 8 numbered hexagons arranged in a gentle S-curve, gradient teal→magenta. Footer: monospace URL `github.com/Harery/LuminaPy` in muted slate. Modern, technical, slightly futuristic. No people. No clutter.
 
 Alternative: do it in Figma in 20 minutes — a free template is at https://www.figma.com/community/file/1080434957197582165 (GitHub OG template).
 

@@ -1,13 +1,13 @@
 # Installation
 
-Follow these steps to set up OCTALUM-PYLAB on your machine.
+Follow these steps to set up LuminaPy on your machine.
 
 ## Option 1: Using pip
 
 ```bash
 # Clone the repository
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
+git clone https://github.com/Harery/LuminaPy.git
+cd LuminaPy
 
 # Create virtual environment
 python -m venv .venv
@@ -29,8 +29,8 @@ pip install -e ".[dev]"
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Clone and setup
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
+git clone https://github.com/Harery/LuminaPy.git
+cd LuminaPy
 
 # Sync dependencies
 uv sync --all-extras
@@ -38,7 +38,7 @@ uv sync --all-extras
 
 ## Option 3: GitHub Codespaces
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Harery/OCTALUM-PYLAB)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Harery/LuminaPy)
 
 Click the button above for an instant, pre-configured environment.
 
@@ -61,7 +61,7 @@ python -m pylab.track
 ## Project Structure
 
 ```
-OCTALUM-PYLAB/
+LuminaPy/
 ├── build/           # Learning content (implementations)
 ├── verify/          # Tests and coverage
 ├── learn/           # Notebooks and resources

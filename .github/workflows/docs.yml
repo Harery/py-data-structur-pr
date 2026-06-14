@@ -49,7 +49,7 @@ jobs:
           else
             echo "No mkdocs.yml found. Creating minimal docs..."
             mkdir -p site
-            cp README.md site/index.md 2>/dev/null || echo "# OCTALUM-PYLAB" > site/index.md
+            cp README.md site/index.md 2>/dev/null || echo "# LuminaPy" > site/index.md
           fi
 
       - name: Upload artifact

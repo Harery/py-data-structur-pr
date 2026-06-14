@@ -1,12 +1,12 @@
-# Welcome to OCTALUM-PYLAB
+# Welcome to LuminaPy
 
 Master Python Data Structures & Algorithms Through Guided Experimentation.
 
-## What is OCTALUM-PYLAB?
+## What is LuminaPy?
 
-OCTALUM-PYLAB is a comprehensive learning laboratory designed to take you from Python basics to algorithm mastery through structured, hands-on practice.
+LuminaPy is a comprehensive learning laboratory designed to take you from Python basics to algorithm mastery through structured, hands-on practice.
 
-## Why Choose OCTALUM-PYLAB?
+## Why Choose LuminaPy?
 
 | Feature | Benefit |
 |---------|---------|
@@ -19,8 +19,8 @@ OCTALUM-PYLAB is a comprehensive learning laboratory designed to take you from P
 ## Quick Start
 
 ```bash
-git clone https://github.com/Harery/OCTALUM-PYLAB.git
-cd OCTALUM-PYLAB
+git clone https://github.com/Harery/LuminaPy.git
+cd LuminaPy
 uv sync --all-extras
 python build/foundations/01-python-basics/hello.py
 ```

@@ -1,5 +1,5 @@
 """
-OCTALUM-PYLAB Build Module
+LuminaPy Build Module
 
 Core learning content organized by phase:
 - Phase 1: Foundations (Python basics, control flow, functions)

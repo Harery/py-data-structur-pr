@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-OCTALUM-PYLAB Project Setup Script
+LuminaPy Project Setup Script
 
 Initialize and configure the learning environment.
 
@@ -109,7 +109,7 @@ def run_checks() -> bool:
 
 def full_setup() -> bool:
     """Run full setup."""
-    print("\n🚀 OCTALUM-PYLAB Setup\n")
+    print("\n🚀 LuminaPy Setup\n")
     print("=" * 40)
 
     if not run_checks():
@@ -136,7 +136,7 @@ def full_setup() -> bool:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="OCTALUM-PYLAB Setup")
+    parser = argparse.ArgumentParser(description="LuminaPy Setup")
     parser.add_argument("--check", action="store_true", help="Check prerequisites only")
     parser.add_argument("--hooks", action="store_true", help="Install git hooks only")
     parser.add_argument("--deps", action="store_true", help="Install dependencies only")

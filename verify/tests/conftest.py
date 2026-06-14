@@ -1,4 +1,4 @@
-"""Pytest configuration and shared fixtures for OCTALUM-PYLAB tests."""
+"""Pytest configuration and shared fixtures for LuminaPy tests."""
 
 from __future__ import annotations
 
